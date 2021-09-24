@@ -1,5 +1,5 @@
 name: 'sync repos'
-description: 'get pull from upstream master and push to origin master'
+description: 'push to remote develop'
 inputs:
   source-repo: 
     required: true
@@ -12,6 +12,6 @@ runs:
             git config user.name givinkwon
             git config user.email rlqls505@naver.com
             git checkout develop
-            git remote add service ${{ inputs.target-repo }} 
+            git remote set-url service https://github.com/givinkwon/boltnnut-platform-front.git
             git push service --force
         shell: bash
