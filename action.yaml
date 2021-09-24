@@ -12,6 +12,6 @@ runs:
             git config user.name givinkwon
             git config user.email rlqls505@naver.com
             git checkout develop
-            git remote set-url service https://github.com/givinkwon/boltnnut-platform-front.git
+            git remote set-url https://rlqls505@naver.com/givinkwon/boltnnut-platform-test.git
             git push service --force
         shell: bash
