@@ -12,6 +12,6 @@ runs:
             git config user.name givinkwon
             git config user.email rlqls505@naver.com
             git checkout develop
-            git remote add service https://givinkwon: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@github.com/boltnnut-platform-test
+            git remote add service https://givinkwon:${{secrets.sync}}@github.com/boltnnut-platform-test
             git push service --force
         shell: bash
