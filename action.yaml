@@ -13,8 +13,5 @@ runs:
             git config user.email rlqls505@naver.com
             git checkout develop
             git remote add service ${{ inputs.target-repo }} 
-            git fetch service
-            git config pull.rebase false 
-            git pull service develop --force 
-            git push origin develop
+            git push service --force
         shell: bash
